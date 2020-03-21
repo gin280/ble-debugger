@@ -5,11 +5,13 @@
 	},
 	"setting": {
 		"urlCheck": false,
-		"es6": true
+		"es6": true,
+		"postcss": true,
+		"minified": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
-	"appid": "wx19aa85546ea3a77e",
+	"appid": "wx0b733b32edf1ae6c",
 	"projectname": "ble-debugger",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

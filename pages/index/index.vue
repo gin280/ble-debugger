@@ -4,7 +4,7 @@
       <block slot="backText">返回</block>
       <block slot="content">蓝牙开发</block>
     </cu-custom>
-    <button @tap="scan" class="margin cu-btn bg-blue lg flex justify-center">gogogo</button>
+    <button @tap="scan" class="margin cu-btn bg-blue lg flex justify-center">蓝牙搜索</button>
     <view class="text-lg margin">已发现{{ devices.length }}个外围设备</view>
     <scroll-view class="solid margin" style="height: 70vh;" scroll-y="true">
       <view @tap="connect(device)" :key="index" v-for="(device, index) of devices" class="solid-bottom padding">
@@ -23,7 +23,7 @@ export default {
     this.watchChange();
   },
   onHide() {
-    this.$bt.stopScan()
+    this.$bt.stopScan();
   },
   data() {
     return {
